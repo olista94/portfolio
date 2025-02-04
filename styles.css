@@ -220,7 +220,11 @@ h1 {
 
 @media screen and (min-width: 600px){
     .profile-wrapper {
+        display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 40px;
         padding: 20px;
         background-color: transparent;
         min-height: 90dvh;
@@ -240,7 +244,9 @@ h1 {
         background-color: #fff;
         display: flex;
         align-items: center;
-        border-radius: 0 20px 20px 0;
+        border-radius: 20px;
+        margin-top: auto;
+        gap: 20px; 
     }
 
     .profile__data {
@@ -248,9 +254,10 @@ h1 {
     }
 
     .profile__img {
-        min-height: 100%;
-        width: 100%;
-        border-radius: 20px 0 0 20px;
+        width: 150%;
+        height: 75%;
+        border-radius: 50%;
+        object-fit: cover;
     }
 
     .profile__skill span {
@@ -333,9 +340,13 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background-color: #fff;
 }
+
+.contact__title {
+    font-size: 2.5rem;
+}
+
 
 .contact__form-container {
     padding: 20px;
