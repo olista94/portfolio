@@ -102,23 +102,31 @@
     </section>
     <section>
         <div class="contact-wrapper">
-            <div class="contact__form-container">
-                <h2>Contacto</h2>
-                <form action="#" method="POST" class="contact__form">
-                    <div class="form-group">
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="contact__submit-button">Enviar</button>
-                </form>
+            <div class="contact-wrapper">
+                <div class="contact__form-container">
+                    <h2>Contacto</h2>
+                    <form action="#" method="POST" class="contact__form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Número de teléfono</label>
+                            <small>Formato: 123456789</small>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="contact__submit-button">Enviar</button>
+                    </form>
+                    
+                </div>
             </div>
         </div>
     </section>
@@ -126,7 +134,11 @@
         <div class="footer-wrapper">
             <footer>
                 <p>Copyright © 2025 Oscar Lista Rivera</p>
-                <p><a href="mailto:olista94@gmail.com">olista94@gmail.com</a></p>
+                <div class="contact__info">
+                    <p><i class="bi bi-envelope"></i> <a href="mailto:olista94@gmail.com" target="_blank">olista94@gmail.com</a></p>
+                    <p><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/oscar-lista-rivera/" target="_blank">LinkedIn</a></p>
+                    <p><i class="bi bi-geo-alt"></i> Ourense, España</p>
+                </div>
             </footer>
         </div>
     </section>

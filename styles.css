@@ -19,6 +19,10 @@ body, div, header, div, ul, li, a {
     padding: 0;
 }
 
+a:visited {
+    color: purple;
+}
+
 /* HEADER SECTION */
 
 header{
@@ -342,7 +346,7 @@ h2 {
     margin-bottom: 15px;
 }
 
-label {
+label, small {
     display: block;
     margin-bottom: 5px;
     color: #2F4858;
