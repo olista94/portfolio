@@ -19,8 +19,13 @@ body, div, header, div, ul, li, a {
     padding: 0;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 a:visited {
-    color: purple;
+    color: inherit;
 }
 
 /* HEADER SECTION */
@@ -283,7 +288,7 @@ h1 {
 }
 
 .portfolio__project {
-    background-image: linear-gradient(#000, #0006), url("https://picsum.photos/800");
+    background-image: linear-gradient(#000, #0006), url("portfolio-image.webp");
     background-size: cover;
     background-position: center;
     border-radius: 12px;
@@ -293,10 +298,11 @@ h1 {
     align-items: center;
 }
 
-.portfolio__project-name {
+.portfolio__project a {
     font-size: 1.5rem;
     text-shadow: 0px 0px 25px #000;
     color: #fff;
+    text-decoration: none;
 }
 
 .portfolio__project:hover {
